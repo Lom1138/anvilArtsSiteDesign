@@ -8,6 +8,17 @@
     --black: #111111;
     --white: #EDEDED;
 }
+.mobile {
+    display: none !important;
+}
+@media screen and (max-width: 600px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block !important;
+    }
+}
 .light {
     font-weight: 300;
 }
@@ -182,22 +193,34 @@ body, html {
     font-size: 6vw;
     color: white;
 }
+.hero-middle > h1 {
+    font-size: 260px;
+    color: white;
+}
 @media screen and (max-width: 750px) {
     .hero-middle > h2 {
         font-size: 10vw;
     }
 }
-.hero-middle > h1 {
-    font-size: 260px;
-    color: white;
-}
 @media screen and (max-width: 600px) {
     .hero-middle > h1 {
         font-size: 180px;
     }
+    .hero-middle > h2 {
+        margin: 0px 0px 250px 0px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .hero-middle > h1 {
+        font-size: 100px;
+    }
+    .hero-middle > h2 {
+        margin: 0px 0px 500px 0px;
+    }
 }
 header {
     position: sticky;
+    position: -webkit-sticky; /* Safari */
     top: 0;
     z-index: 10;
     display: flex;
@@ -235,8 +258,16 @@ header {
 .headerInner > span {
     font-size: 35px !important;
 }
+.headerInner > a > span {
+    font-size: 35px !important;
+}
 main {
     padding: 75px 125px 75px 125px;
+}
+@media screen and (max-width: 600px) {
+    main {
+        padding: 75px 15px 75px 15px;
+    }
 }
 main > .section {
     margin: 100px 0px 100px 0px;
@@ -328,8 +359,18 @@ footer {
 .footerContent > .footerSection {
     margin: 0px 50px 0px 50px;
 }
+@media screen and (max-width: 600px) {
+    footer {
+        padding-inline: 10vw;
+    }
+    .footerContent > .footerSection {
+        margin: 0px 25px 0px 25px;
+    }
+    
+}
 .footerContent {
     justify-content: center;
+    flex-wrap: wrap;
 }
 .footerLogo {
     width: 200px;
