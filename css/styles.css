@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Iceberg&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+    --purple: #2B1740;
+    --orange: #F0752D;
+    --pink: #F69A79;
+    --red: #F24040;
+    --blue: #2781BC;
+    --black: #111111;
+    --white: #EDEDED;
+}
+.light {
+    font-weight: 300;
+}
+.semiBold {
+    font-weight: 600;
+}
+.bold {
+    font-weight: 700;
+}
+.t16 {
+    font-size: 16px;
+}
+.t18 {
+    font-size: 18px;
+}
+.t20 {
+    font-size: 20px;
+}
+.t22 {
+    font-size: 22px;
+}
+.t24 {
+    font-size: 24px;
+}
+.t26 {
+    font-size: 26px;
+}
+.t30 {
+    font-size: 30px;
+}
+.t50 {
+    font-size: 50px;
+}
+.flex {
+    display: flex;
+}
+.left {
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+.right {
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.spaceBetween {
+    justify-content: space-between;
+}
+.end {
+    align-items: flex-end;
+}
+.row {
+    flex-direction: row;
+}
+.column {
+    flex-direction: column;
+}
+.buttonPrimary {
+    width: fit-content;
+    border: none;
+    background-color: var(--purple);
+    padding: 9px 18px 9px;
+    color: var(--white);
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    transition: .5s;
+}
+.buttonPrimary:hover {
+    background-color: var(--pink);
+    color: var(--black);
+    cursor: pointer;
+}
+.buttonSecondary {
+    width: fit-content;
+    border: none;
+    background-color: var(--orange);
+    padding: 9px 18px 9px;
+    color: var(--black);
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    transition: .5s;
+}
+.buttonSecondary:hover {
+    background-color: var(--pink);
+    color: var(--black);
+    cursor: pointer;
+}
+.buttonTeritary {
+    width: fit-content;
+    border: none;
+    background-color: var(--white);
+    padding: 9px 18px 9px;
+    color: var(--black);
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    transition: .5s;
+}
+.buttonTeritary:hover {
+    background-color: var(--pink);
+    color: var(--black);
+    cursor: pointer;
+}
+.material-symbols-outlined {
+    vertical-align: -0.125em;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 25
+}
+.fontawesome {
+    display: inline;
+    margin-inline: 5px;
+}
+body, html {
+    margin: 0;
+    top: 0;
+    font-family: "Open Sans", sans-serif;
+}
+.hero-container {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.hero-image1 {
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100vw;
+    position: absolute;
+    background-image: var(--heroBack, url("../images/hero/orchestra.Back.jpg"));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.hero-image2 {
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100vw;
+    position: absolute;
+    background-image: var(--heroFront, url("../images/hero/orchestra.Front.png"));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    z-index: 2;
+}
+.hero-middle {
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+    text-shadow: 0px 0px 50px black;
+}
+.hero-middle > h2 {
+    text-align: center;
+    font-size: 6vw;
+    color: white;
+}
+@media screen and (max-width: 750px) {
+    .hero-middle > h2 {
+        font-size: 10vw;
+    }
+}
+.hero-middle > h1 {
+    font-size: 260px;
+    color: white;
+}
+@media screen and (max-width: 600px) {
+    .hero-middle > h1 {
+        font-size: 180px;
+    }
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    background-color: var(--white);
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 50px 10px 50px;
+}
+.headerSection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+.headerSection:first-child > div { margin-right: auto; }
+.headerSection:last-child > div { margin-left: auto; }
+
+.headerInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    padding: 0 5px;
+    text-decoration: none;
+}
+.headerInner > img {
+    height: 50px;
+}
+.headerInner * {
+    text-decoration: none;
+    color: var(--black) !important;
+    margin: 0px;
+}
+.headerInner > span {
+    font-size: 35px !important;
+}
+main {
+    padding: 75px 125px 75px 125px;
+}
+main > .section {
+    margin: 100px 0px 100px 0px;
+    text-align: center;
+    align-content: center;
+}
+main > .section:first-child {margin-top: 0px;}
+.section * {
+    margin: 0px;
+}
+.filterButtons > button {
+    margin-inline: 10px;
+}
+.cards {
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: stretch;
+}
+.card {
+    margin: 50px;
+    width: 350px;
+}
+.card > * {
+    margin: 5px 0px 5px 0px;
+}
+.card > img {
+    width: inherit;
+}
+.card > .left > *{
+    margin: 5px 0px 5px 0px;
+}
+.colourBlockA {
+    flex-shrink: 0;
+    width: 20px !important;
+    height: 36px !important;
+    background-color: var(--orange);
+}
+.colourBlockF {
+    flex-shrink: 0;
+    width: 20px !important;
+    height: 36px !important;
+    background-color: var(--red);
+}
+.colourBlockH {
+    flex-shrink: 0;
+    width: 20px !important;
+    height: 36px !important;
+    background-color: var(--blue);
+}
+.activeA {
+    background-color: var(--orange);
+}
+.activeF {
+    background-color: var(--red);
+}
+.activeH {
+    background-color: var(--blue);
+    color: var(--white);
+}
+#parkingCard > div {
+    margin: 10px 0px 10px 0px;
+}
+#parkingCard > div:first-child {margin-top: 0px;}
+#parkingCard > div > .left > h2 > span {
+    color: var(--blue);
+}
+.restIcon {
+    width: 75px;
+}
+#diningCard > div {
+    margin: 10px 0px 10px 0px;
+}
+#diningCard > div:first-child {margin-top: 0px;}
+#donate > div {
+    flex-wrap: wrap;
+}
+#donate > div > div {
+    width: 400px;
+    margin: 25px 50px 50px 50px;
+}
+footer {
+    background-color: var(--purple);
+    color: var(--white);
+    text-align: center;
+    padding-inline: 25vw;
+    margin-top: auto;
+    padding: 50px 250px 50px 250px;
+}
+.footerContent > .footerSection {
+    margin: 0px 50px 0px 50px;
+}
+.footerContent {
+    justify-content: center;
+}
+.footerLogo {
+    width: 200px;
+    padding: 1rem;
+}
+.socialIcons > a {
+    margin-inline: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    color: var(--purple);
+    background: var(--white);
+    border-radius: 50%;
+    transition: .5s;
+}
+.socialIcons > a:hover {
+    background: var(--pink);
+    color: var(--black);
+}
+.fa-brands {
+    vertical-align: -0.25em;
+}

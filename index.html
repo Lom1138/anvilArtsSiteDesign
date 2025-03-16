@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anvil Arts</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
+    <link rel="icon" href="images/favicon/favicon_anvilA.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/def20c6a24.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="hero-container">
+        <div class="hero-image1" id="heroFront"></div>
+        <div class="hero-middle"><h2>Great Performance</h2><h1 id="heroText">LIVE!</h1></div>
+        <div class="hero-image2" id="heroBack"></div>
+    </div>
+    <header id="header">
+        <div class="headerSection"><div class="headerInner"><a href="tel:01256844244"><p>Box office: 01256 844244</p></a></div></div>
+        <div class="headerSection"><div class="headerInner"><img src="images/branding/aA.Colour.Dark.png" alt="Anvil Arts Logo"></div></div>
+        <div class="headerSection"><div class="headerInner"><p>What's On</p><span class="material-symbols-outlined">account_circle</span></div></div>
+    </header>
+<main>
+    <div class="section" id="welcome">
+        <h1 class="t50 bold">WELCOME</h1>
+        <p class="t20 light">Welcome to Anvil Arts - three venues at the heart of music and culture in Basingstoke</p>
+    </div>
+    <div class="section" id="whatsOn">
+        <h1 class="t50 bold">WHAT'S ON</h1>
+        <p class="t24 semiBold">Filter by venue</p>
+        <div class="filterButtons flex center row"><button class="buttonTeritary" onclick="toggleStateA()" id="toggleA">The Anvil</button><button class="buttonTeritary" onclick="toggleStateF()" id="toggleF">The Forge</button><button class="buttonTeritary" onclick="toggleStateH()" id="toggleH">The Haymarket</button></div>
+        <div class="cards flex center row">
+            <div class="card flex column">
+                <img src="images/shows/cardImg1.jpg">
+                <div class="flex row spaceBetween">
+                    <h2 class="semiBold t26 left">John Wilson & Sinfonia of London</h2>
+                    <div class="colourBlockA"></div>
+                </div>
+                <div class="left">
+                    <p class="light t18">with special guest soloists Louise Dearman, Nathaniel Hackmann & Scarlett Strallen</p><p class="semiBold t20"><span class="material-symbols-outlined">event</span>Tue 24 Jun 2025, 7:00pm</p>
+                </div>
+                <div class="flex row spaceBetween">
+                    <button class="buttonPrimary">Book now</button>
+                    <button class="buttonTeritary">Learn more</button>
+                </div>
+            </div>
+            <div class="card flex column">
+                <img src="images/shows/cardImg2.jpg">
+                <div class="flex row spaceBetween">
+                    <h2 class="semiBold t26 left">Just Between Ourselves</h2>
+                    <div class="colourBlockH"></div>
+                </div>
+                <div class="left">
+                    <p class="light t18">by Alan Ayckbourn. Directed by Michael Cabot</p><p class="semiBold t20"><span class="material-symbols-outlined">event</span>Tue 25 – Sat 29 Mar</p>
+                </div>
+                <div class="flex row spaceBetween">
+                    <button class="buttonPrimary">Book now</button>
+                    <button class="buttonTeritary">Learn more</button>
+                </div>
+            </div>
+            <div class="card flex column">
+                <img src="images/shows/cardImg3.jpg">
+                <div class="flex row">
+                    <h2 class="semiBold t26 left">Pre-Concert Talk: Philharmonia Orchestra</h2>
+                    <div class="colourBlockF"></div>
+                </div>
+                <div class="left">
+                    <p class="light t18"></p><p class="semiBold t20"><span class="material-symbols-outlined">event</span>Wed 19 Mar 2025, 6:30pm</p>
+                </div>
+                <div class="flex row spaceBetween">
+                    <button class="buttonPrimary">Book now</button>
+                    <button class="buttonTeritary">Learn more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="evening">
+        <h1 class="t50 bold">THE PERFECT EVENING</h1>
+        <p class="t24 semiBold">Plan the perfect evening out at the theatre!</p>
+        <div class="cards flex center row">
+            <div class="card flex column center">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1YfSgb_ua-MR1TRD_7dwKVO1vhIwwCvA&ehbc=2E312F&noprof=1" width="350" height="350"></iframe>
+                <h2 class="semiBold t26 center">The Anvil/Forge</h2>
+                <a href="https://maps.app.goo.gl/geFQTWVDyE7zrVZC7" target="_blank"><button class="buttonTeritary">Directions</button></a>
+                <h2 class="semiBold t26 center">The Haymarket</h2>
+                <a href="https://maps.app.goo.gl/mP63AP6bRfxxwRR56" target="_blank"><button class="buttonTeritary">Directions</button></a>
+            </div>
+            <div class="card flex column" id="parkingCard">
+                <div>
+                    <div class="left"><h2 class="semiBold t22">The Malls Car Park</h2></div>
+                    <div class="flex row spaceBetween end">
+                        <a href="https://maps.app.goo.gl/TC33ND4kX5XX8SET8" target="_blank"><button class="buttonTeritary">Directions</button></a>
+                        <div class="right light t16"><p>Anvil 469ft</p><p>Haymarket 0.4mi</p></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="left"><h2 class="semiBold t22">Churchill Way<span class="material-symbols-outlined">accessible</span></h2></div>
+                    <div class="flex row spaceBetween end">
+                        <a href="https://maps.app.goo.gl/6kNxba42HmpyZoDw5" target="_blank"><button class="buttonTeritary">Directions</button></a>
+                        <div class="right light t16"><p>Anvil 0.1mi</p><p>Haymarket 0.4mi</p></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="left"><h2 class="semiBold t22">Festival Place Car Park<span class="material-symbols-outlined">accessible</span></h2></div>
+                    <div class="flex row spaceBetween end">
+                        <a href="https://maps.app.goo.gl/GWaSAMbfQhqYzBHm6" target="_blank"><button class="buttonTeritary">Directions</button></a>
+                        <div class="right light t16"><p>Anvil 0.3mi</p><p>Haymarket 0.5mi</p></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="left"><h2 class="semiBold t22">Central Car Park<span class="material-symbols-outlined">accessible</span></h2></div>
+                    <div class="flex row spaceBetween end">
+                        <a href="https://maps.app.goo.gl/Gugjxejn27DjsnwEA" target="_blank"><button class="buttonTeritary">Directions</button></a>
+                        <div class="right light t16"><p>Anvil 0.4mi</p><p>Haymarket 0.2mi</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex column" id="diningCard">
+                <div class="flex row spaceBetween">
+                    <div><img src="images/logos/logo.pizzaExpress.svg" class="restIcon"></div>
+                    <div class="right">
+                        <h2 class="semiBold t22">Pizza Express</h2>
+                        <p class="light t16">Italian-style pizzas</p>
+                        <a href="https://maps.app.goo.gl/AxC9dZ2MKTW7mHGM8" target="_blank"><button class="buttonTeritary">Directions</button></a>
+                    </div>
+                </div>
+                <div class="flex row spaceBetween">
+                    <div><img src="images/logos/logo.Côte.svg" class="restIcon"></div>
+                    <div class="right">
+                        <h2 class="semiBold t22">Côte Brasserie</h2>
+                        <p class="light t16">French-inspired cuisine</p>
+                        <a href="https://maps.app.goo.gl/dBtAWezsY1ZhzTW49" target="_blank"><button class="buttonTeritary">Directions</button></a>
+                    </div>
+                </div>
+                <div class="flex row spaceBetween">
+                    <div><img src="images/logos/logo.lasIguanas.svg" class="restIcon"></div>
+                    <div class="right">
+                        <h2 class="semiBold t22">Las Iguanas</h2>
+                        <p class="light t16">Latin American flavors</p>
+                        <a href="https://maps.app.goo.gl/gismh31nwKmq6adM9" target="_blank"><button class="buttonTeritary">Directions</button></a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div class="section" id="donate">
+        <h1 class="t50 bold">SUPPORT US</h1>
+        <div class="flex row center" >
+            <div>
+                <h2 class="semiBold t26">What we do</h2>
+                <p class="light t16">The Anvil Trust is an independent educational charity which runs Anvil Arts, the largest performing arts organisation in Hampshire. At The Anvil, The Haymarket, and The Forge, thousands of people from all over the region discover great performance – live.</p>
+                <button class="buttonTeritary">Learn more</button>
+            </div>
+            <div>
+                <h2 class="semiBold t26">Make a donation</h2>
+                <p class="light t16">We rely upon your contributions to support our work, as the income from ticket sales goes to the artists, not the venue. By making a contribution you are helping us to expand our programme of activities and benefit even more people in our community.</p>
+                <button class="buttonPrimary">Donate</button>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footerContent flex row">
+        <div class="footerSection">
+            <h2 class="t30 bold">Connect with us</h2>
+            <div class="socialIcons flex row center">
+                <a href="https://www.facebook.com/AnvilArts/" target="_blank"><span class="fa-brands fa-facebook-f"></span></a>
+                <a href="https://twitter.com/AnvilArts" target="_blank"><span class="fa-brands fa-x-twitter"></span></a>
+                <a href="https://www.youtube.com/channel/UCjkeMVu7UQBLhB6HL2tJVBA" target="_blank"><span class="fa-brands fa-youtube"></span></a>
+                <a href="https://www.instagram.com/anvil_arts/?hl=en" target="_blank"><span class="fa-brands fa-instagram"></span></a>
+                <a href="https://www.tiktok.com/@anvil_arts" target="_blank"><span class="fa-brands fa-tiktok"></span></a>
+            </div>
+        </div>
+        <div class="footerSection">
+            <h2 class="t30 bold">More</h2>
+            <p class="t20 light">Online pre-ordering</p>
+            <p class="t20 light">Your e-ticket</p>
+            <p class="t20 light">Accessibility</p>
+            <p class="t20 light">Environment</p>
+            <p class="t20 light">Floor Plan</p>
+        </div>
+    </div>
+    <div>
+        <p class="light t18">
+            The Anvil Trust is an independent educational charity. The Anvil Trust Limited Registered in England No. 2720007 Registered Charity No. 1034961. Registered office: The Anvil, Churchill Way, Basingstoke, Hampshire RG21 7QR. © Copyright 2025 Anvil Arts.
+        </p>
+        <img src="images/branding/aA.monoChrome.png" alt="Anvil Arts Logo" class="footerLogo">
+    </div>
+</footer>
+<script src="js/randomHero.js" type="text/javascript"></script>
+<script>
+    function toggleStateA() {
+        const button = document.querySelector('#toggleA');
+        button.classList.toggle('activeA');
+    }
+    function toggleStateF() {
+        const button = document.querySelector('#toggleF');
+        button.classList.toggle('activeF');
+    }
+    function toggleStateH() {
+        const button = document.querySelector('#toggleH');
+        button.classList.toggle('activeH');
+    }
+</script>
+</body>
+</html>
