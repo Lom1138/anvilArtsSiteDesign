@@ -11,14 +11,6 @@
 .mobile {
     display: none !important;
 }
-@media screen and (max-width: 600px) {
-    .desktop {
-        display: none;
-    }
-    .mobile {
-        display: block !important;
-    }
-}
 .light {
     font-weight: 300;
 }
@@ -199,21 +191,6 @@ body, html {
     color: white;
     margin: 0px 0px 150px 0px;
 }
-@media screen and (max-width: 750px) {
-    .hero-middle > h2 {
-        font-size: 10vw;
-    }
-}
-@media screen and (max-width: 600px) {
-    .hero-middle > h1 {
-        font-size: 180px;
-    }
-}
-@media screen and (max-width: 400px) {
-    .hero-middle > h1 {
-        font-size: 100px;
-    }
-}
 header {
     position: sticky;
     position: -webkit-sticky; /* Safari */
@@ -259,11 +236,6 @@ header {
 }
 main {
     padding: 75px 125px 75px 125px;
-}
-@media screen and (max-width: 600px) {
-    main {
-        padding: 75px 15px 75px 15px;
-    }
 }
 main > .section {
     margin: 100px 0px 100px 0px;
@@ -355,15 +327,6 @@ footer {
 .footerContent > .footerSection {
     margin: 0px 50px 0px 50px;
 }
-@media screen and (max-width: 600px) {
-    footer {
-        padding-inline: 10vw;
-    }
-    .footerContent > .footerSection {
-        margin: 0px 25px 0px 25px;
-    }
-    
-}
 .footerContent {
     justify-content: center;
     flex-wrap: wrap;
@@ -388,4 +351,37 @@ footer {
 }
 .fa-brands {
     vertical-align: -0.25em;
+}
+@media screen and (max-width: 400px) {
+    .hero-middle > h1 {
+        font-size: 100px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block !important;
+    }
+    .hero-middle > h1 {
+        font-size: 180px;
+    }
+    header {
+        padding: 10px;
+    }
+    main {
+        padding: 75px 15px 75px 15px;
+    }
+    footer {
+        padding-inline: 10vw;
+    }
+    .footerContent > .footerSection {
+        margin: 0px 25px 0px 25px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .hero-middle > h2 {
+        font-size: 10vw;
+    }
 }
